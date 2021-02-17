@@ -19,57 +19,49 @@ const theme = createMuiTheme({
 		}
 	},
 	typography: {
-		fontFamily: 'Roboto'
+		fontFamily: 'Roboto',
+		h1: {
+			fontSize: '36px',
+			lineHeight: '42px',
+			fontWeight: 900
+		},
+		h2: {
+			fontSize: '32px',
+			lineHeight: '37px',
+			fontWeight: 700
+		},
+		h3: {
+			fontSize: '28px',
+			lineHeight: '33px',
+			fontWeight: 500
+		},
+		h4: {
+			fontSize: '24px',
+			lineHeight: '28px',
+			fontWeight: 500
+		},
+		h5: {
+			fontSize: '18px',
+			lineHeight: '21px',
+			fontWeight: 500
+		},
+		h6: {
+			fontSize: '16px',
+			lineHeight: '19px',
+			fontWeight: 'bold'
+		},
+		body1: {
+			fontSize: '14px',
+			lineHeight: '16px',
+			fontWeight: 'bold'
+		},
+		body2: {
+			fontSize: '14px',
+			lineHeight: '16px',
+			fontWeight: 300
+		}
 	}
 });
-
-theme.typography.h1 = {
-	fontSize: '36px',
-	lineHeight: '42px',
-	fontWeight: 900
-}
-
-theme.typography.h2 = {
-	fontSize: '32px',
-	lineHeight: '37px',
-	fontWeight: 700
-}
-
-theme.typography.h3 = {
-	fontSize: '28px',
-	lineHeight: '33px',
-	fontWeight: 500
-}
-
-theme.typography.h4 = {
-	fontSize: '24px',
-	lineHeight: '28px',
-	fontWeight: 500
-}
-
-theme.typography.h5 = {
-	fontSize: '18px',
-	lineHeight: '21px',
-	fontWeight: 500
-}
-
-theme.typography.h6 = {
-	fontSize: '16px',
-	lineHeight: '19px',
-	fontWeight: 'bold'
-}
-
-theme.typography.body1 = {
-	fontSize: '14px',
-	lineHeight: '16px',
-	fontWeight: 'bold'
-}
-
-theme.typography.body2 = {
-	fontSize: '14px',
-	lineHeight: '16px',
-	fontWeight: 300
-}
 
 theme.overrides = {
 		MuiButton: {
@@ -82,7 +74,7 @@ theme.overrides = {
 				borderRadius: '6px',
 				marginLeft: defaultTheme.spacing(1.875),
 				marginRight: defaultTheme.spacing(1.875),
-				fontFamily: 'Roboto, sans-serif',
+				fontFamily: 'Roboto',
 				fontWeight: 900,
 				fontSize: '16px',
 				lineHeight: '19px',
