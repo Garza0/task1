@@ -4,7 +4,7 @@ import {Button as ButtonBase} from '@material-ui/core';
 interface ButtonProps {
 	variant?: 'contained' | 'outlined' | 'text';
 	size: 'large' | 'medium' | 'small';
-	// color: 'default' | 'primary' | 'secondary';
+	color: 'default' | 'primary' | 'secondary';
 	children: string;
 }
 
@@ -13,14 +13,15 @@ const Button: FC<ButtonProps> = (props) => {
 	const {
 		variant='contained',
 		size,
-		// color,
+		color,
 		children
 	} = props;
 
 	return (
 		<ButtonBase
 			size={size}
-			// color={color}
+			color={color}
+			variant={variant}
 		>
 			{children}
 		</ButtonBase>

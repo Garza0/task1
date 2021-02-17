@@ -11,18 +11,20 @@ const defaultTheme = createMuiTheme();
 
 const theme = createMuiTheme({
 	palette: {
-		// primary: {
-		// 	main: colors.blue
-		// },
-		// secondary: {
-		// 	main: colors.grey
-		// }
-	}});
+		primary: {
+			main: colors.green,
+		},
+		secondary: {
+			main: colors.grey,
+		}
+	}
+});
 
 	theme.overrides = {
 		MuiButton: {
 			root: {
-				background: colors.green,
+				backgroundColor: colors.blue,
+				background: colors.blue,
 				color: colors.white,
 				width: '133px',
 				height: '50px',
@@ -32,14 +34,19 @@ const theme = createMuiTheme({
 				fontFamily: 'Roboto, sans-serif',
 				fontWeight: 900,
 				fontSize: '16px',
-				lineHeight: '19px'
+				lineHeight: '19px',
+				textTransform: 'none'
 			},
 			sizeLarge: {
-				width: '270px'
+				width: '270px',
+				fontSize: '16px',
+				lineHeight: '19px',
 			},
 			sizeSmall: {
 				width: '120px',
-				height: '40px'
+				height: '40px',
+				fontSize: '16px',
+				lineHeight: '19px',
 			},
 		}
 	};
