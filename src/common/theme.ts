@@ -60,10 +60,8 @@ const theme = createMuiTheme({
 			lineHeight: '16px',
 			fontWeight: 300
 		}
-	}
-});
-
-theme.overrides = {
+	},
+	overrides: {
 		MuiButton: {
 			root: {
 				backgroundColor: colors.blue,
@@ -100,6 +98,8 @@ theme.overrides = {
 				borderRadius: '6px'
 			}
 		}
-	};
+	}
+});
+
 
 export default theme;

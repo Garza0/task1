@@ -7,7 +7,7 @@ import Typography from '../Typography';
 const StoryBook = () => {
 
 	return (
-		<Box pt={1} pl={1} display="flex" flexDirection="column">
+		<Box pt={1} pl={1} ml={5} mb={5} display="flex" flexDirection="column">
 			<Box pt={5} mb={1} display="grid" gridRowGap="32px">
 				<Box>
 					<Button size="large" variant="contained" color="primary">Sign Up</Button>
@@ -26,9 +26,9 @@ const StoryBook = () => {
 				</Box>
 			</Box>
 			<Box pt={5} mb={1}>
-				{/* <Box>
+				<Box>
 					<TextField label="Placeholder"/>
-				</Box> */}
+				</Box>
 			</Box>
 			<Box pt={5} mb={1} display="grid" gridRowGap="24px">
 				<Typography variant="h1">Typography</Typography>
