@@ -6,6 +6,7 @@ interface ButtonProps {
 	size: 'large' | 'medium' | 'small';
 	color: 'default' | 'primary' | 'secondary';
 	children: string;
+	disableElevation?: boolean;
 }
 
 const Button: FC<ButtonProps> = (props) => {
@@ -14,6 +15,7 @@ const Button: FC<ButtonProps> = (props) => {
 		variant='contained',
 		size,
 		color,
+		disableElevation = true,
 		children
 	} = props;
 
@@ -22,6 +24,7 @@ const Button: FC<ButtonProps> = (props) => {
 			size={size}
 			color={color}
 			variant={variant}
+			disableElevation={disableElevation}
 		>
 			{children}
 		</ButtonBase>

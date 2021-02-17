@@ -8,7 +8,7 @@ const StoryBook = () => {
 
 	return (
 		<Box pt={1} pl={1} display="flex" flexDirection="column">
-			<Box pt={5} mb={1}>
+			<Box pt={5} mb={1} display="grid" gridRowGap="32px">
 				<Box>
 					<Button size="large" variant="contained" color="primary">Sign Up</Button>
 					<Button size="medium" variant="contained" color="primary">Sign Up</Button>
