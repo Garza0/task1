@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import {ThemeProvider} from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import StoryBook from './components/StoryBook';
 import theme from './common/theme';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <CssBaseline />
         <Switch>
           <Route path="/story-book" exact>
-
+            <StoryBook/>
           </Route>
         </Switch>
       </ThemeProvider>
