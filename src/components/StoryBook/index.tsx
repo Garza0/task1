@@ -8,9 +8,9 @@ const StoryBook = () => {
 		<Box pt={1} pl={1} display="flex" flexDirection="column">
 			<Box pt={5} mb={1}>
 				<Box>
-					<Button size="large" color="default">Sing Up</Button>
-					<Button size="medium" color="default">Sing Up</Button>
-					<Button size="small" color="default">Sing Up</Button>
+					<Button size="large">Sing Up</Button>
+					<Button size="medium">Sing Up</Button>
+					<Button size="small">Sing Up</Button>
 				</Box>
 			</Box>
 		</Box>
